@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #0000002b !important;
+  padding-bottom: 0.2rem;
+}
+
+.footer {
+  margin-bottom: 0;
+  bottom: -2.5rem;
+  background-color: #000000 !important;
+  width: 100%;
+  position: relative;
+}
+
+.footer>h6 {
+  color: cyan;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.btn-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-bottom: 0.5rem;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.userNameTitle {
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+  font-size: large;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+}
+
+/* antd icons */
+.switch-icons {
+  box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.677);
+  border-radius: 0.25rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.anticon svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
