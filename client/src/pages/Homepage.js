@@ -85,9 +85,9 @@ const Homepage = () => {
           selectedDate,
           type,
         });
-        setLoading(false);
         setAllTransaction(response.data);
-        console.log(response.data);
+        setLoading(false);
+        // console.log(response.data);
       } catch (error) {
         console.log(error);
         message.error("Fetch issue with current transaction");
@@ -119,7 +119,7 @@ const Homepage = () => {
         await axios.post("/transactions/edit-transaction", {
           payload: {
             ...values,
-            userId: user._id,
+            userid: user._id,
           },
           transactionId: editable._id,
         });
@@ -128,11 +128,12 @@ const Homepage = () => {
       } else {
         await axios.post("/transactions/add-transaction", {
           ...values,
-          userId: user._id,
+          userid: user._id,
         });
         setLoading(false);
         message.success("Transaction added successfully");
       }
+
       setShowModal(false);
       setEditable(null);
     } catch (error) {
