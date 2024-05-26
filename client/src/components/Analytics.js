@@ -49,7 +49,7 @@ const Analytics = ({ allTransaction }) => {
     (totalExpenseTurnover / totalTurnover) * 100;
   return (
     <>
-      <div className="row m-3">
+      <div className="row m-3 analyticcont">
         <div className="col-md-4">
           <div className="card">
             <div className="card-header">
@@ -103,9 +103,9 @@ const Analytics = ({ allTransaction }) => {
           </div>
         </div>
       </div>
-      <div className="row mt-3">
+      <div className="row mt-3 analyticcont bottomside">
         <div className="col-md-4">
-          <h4>Categorywise Income</h4>
+          <h4 className="text-center">Income</h4>
           {categories.map((category) => {
             const amount = allTransaction
               .filter(
@@ -131,7 +131,7 @@ const Analytics = ({ allTransaction }) => {
           })}
         </div>
         <div className="col-md-4">
-          <h4>Categorywise Expense</h4>
+          <h4 className="text-center">Expense</h4>
           {categories.map((category) => {
             const amount = allTransaction
               .filter(

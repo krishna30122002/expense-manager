@@ -145,7 +145,8 @@ const Homepage = () => {
   return (
     <Layout>
       {loading && <Spinner />}
-      <div className="filters">
+      <div className="container">
+      <div style={{height: "7rem"}} className="filters dashed">
         <div>
           <h6>Select Frequency</h6>
           <Select
@@ -186,6 +187,7 @@ const Homepage = () => {
           )}
         </div>
         <div className="switch-icons">
+        <h6>Change Tab</h6>
           <UnorderedListOutlined
             className={`mx-2 ${
               viewData === "table" ? "active-icon" : "inactive-icon"
@@ -201,13 +203,14 @@ const Homepage = () => {
         </div>
         <div>
           <button
-            className="btn btn-primary"
+            className="btn btnlink"
             onClick={() => setShowModal(true)}
           >
             Add New
           </button>
         </div>
       </div>
+      <div className="container-content">
       <div className="content">
         {viewData === "table" ? (
           <Table columns={columns} dataSource={allTransaction} />
@@ -266,6 +269,8 @@ const Homepage = () => {
           </div>
         </Form>
       </Modal>
+      </div>
+      </div>
     </Layout>
   );
 };
