@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
+
+body {
+  background-image: url('../public/img/background2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  background-color: #0000002b !important;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.0625rem dashed black !important;
+}
+
+.footer {
+  position: relative;
+  
+  margin-top: 1rem;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000002b;
+  color: wheat;
+  border-top: 0.0625rem dashed black;
+  padding: 0.625rem 0;
+}
+
+
+
+.userNameTitle {
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+  font-size: large;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9375rem 1.25rem;
+  box-shadow: 0 0 0.1875rem gray;
+  font-weight: 800;
+}
+
+.filters h6 {
+  font-weight: 600;
+}
+
+.switch-icons {
+  box-shadow: 0 0 0.35rem rgba(0, 0, 0, 0.677);
+  border-radius: 0.25rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.anticon svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+.navbar-logo {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.7rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  min-height: 101vh;
+}
+
+.filters {
+  width: 100%;
+  border: 0.0625rem solid black;
+  border-radius: 0.25rem;
+  margin: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0.1875rem 0.5rem;
+}
+
+.container-content {
+  width: 100%;
+  margin: 2rem 1rem;
+}
+
+.ant-table-wrapper {
+  width: 100%;
+  border: 0.125rem dashed black;
+  border-radius: 0.5625rem;
+  box-shadow: rgba(46, 41, 41, 0.35) 0px 0.3125 0.9375rem;
+  background-color: #f0f0f0;
+}
+
+.btnlink {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 0.25rem;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0.125rem 0.250rem, rgba(45, 35, 66, 0.3) 0 0.4375rem 0.8125rem -0.8175rem, #D6D6E7 0 -0.4175rem 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 3rem;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 1.125rem;
+}
+
+.btnlink:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 0.125rem 0.25rem, rgba(45, 35, 66, 0.3) 0 0.4375rem 0.8125rem -0.1875rem, #D6D6E7 0 -0.1875rem 0 inset;
+}
+
+.btnlink:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 0.25rem 0.5rem, rgba(45, 35, 66, 0.3) 0 0.4375rem 0.8125rem -0.1875rem, #D6D6E7 0 -0.1875rem 0 inset !important;
+  transform: translateY(-0.125rem);
+}
+
+.btnlink:active {
+  box-shadow: #D6D6E7 0 0.1875rem 0.4375rem inset;
+  transform: translateY(0.125rem);
+}
+
+.navbar-brand:hover {
+  transform: scale(0.97);
+  transition: all linear 0.3s;
+}
+
+.analyticcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-analytic{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.income-analytic{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomside {
+  margin-left: 1rem;
+}
+
+.card {
+  border: 0.0625rem solid black;
+}
+
+.register-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 101vh;
+}
+
+.register-wrapper {
+  max-width: 27.5rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.1);
+}
+
+.register-wrapper .register-title {
+  height: 5.625rem;
+  background: #16a085;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-wrapper form {
+  padding: 1.875rem 1.5625rem 1.5625rem 1.5625rem;
+}
+
+
+.imagefront {
+  display: flex;
+  margin-left: 4rem;
+  height: 14rem;
+}
