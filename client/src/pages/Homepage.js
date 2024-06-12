@@ -186,6 +186,7 @@ const Homepage = () => {
             />
           )}
         </div>
+        <div className="container-buttons1">
         <div className="switch-icons">
           <UnorderedListOutlined
             className={`mx-2 ${
@@ -208,8 +209,9 @@ const Homepage = () => {
             Add New
           </button>
         </div>
+        </div>
       </div>
-      <div className="content">
+      <div className="table-content">
         {viewData === "table" ? (
           <Table columns={columns} dataSource={allTransaction} />
         ) : (

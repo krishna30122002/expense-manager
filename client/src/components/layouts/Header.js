@@ -39,7 +39,7 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link className="navbar-brand" to="/">
-            Expense Manager
+            Expense Manager<span className="mobile-info">   (mobile development under process)</span>
           </Link>
           <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
             <li className="userNameTitle nav-item">
